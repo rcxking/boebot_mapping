@@ -1,0 +1,3 @@
+# ignore ROS build and devel folders   
+src/boebot_workspace/build/*
+src/boebot_workspace/devel/*

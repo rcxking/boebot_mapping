@@ -67,13 +67,15 @@ void setup() {
 }
 
 void loop() {
-  forward(180);
-  delay(2000);
-  halt();
-  delay(2000);
-  reverse(180);
-  delay(2000);
-  halt();
-  delay(2000);
-  
+ 
+  /*
+   * Poll for Serial Commands from the Raspberry Pi:
+   *
+   * Protocol defined as follows:
+   * 
+   */
+  if(Serial.available()) {
+    // New command received:
+    
+  } // End if
 }
